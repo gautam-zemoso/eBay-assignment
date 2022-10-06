@@ -44,15 +44,6 @@ th{
   color: #555555;
   background-color: #F7F7F7;
 }
-td{
-  font-family: 'Market Sans';
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  height: 44px;
-  text-align: left;
-  color: #333333;
-}
 .step-content{
   margin-right: 5%;
 }
