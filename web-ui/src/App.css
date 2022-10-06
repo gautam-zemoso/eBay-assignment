@@ -319,8 +319,7 @@ p.paymentActivity {
   position: relative;
   width: 95%;
   border: 1px solid #000000;
-  margin: 0px;
-  margin-right: 5%;
+  margin: 2% 5% 0% 0%; 
 }
 
 .accountSummary {
