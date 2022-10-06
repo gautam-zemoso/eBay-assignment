@@ -1,10 +1,11 @@
+import React from 'react';
 import './App.css';
-import SellHubData from '../src/SellHubData.json';
+import SellHubData from './SellHubData.json';
 import clsx from 'clsx'; 
 
 
 
-function App() {
+function SellHub() {
   const data = SellHubData;
   const fileContent = SellHubData?.stepsContent;
   const getHeadings = () => {
@@ -110,4 +111,4 @@ function App() {
   );
 }
 
-export default App;
+export default SellHub;
