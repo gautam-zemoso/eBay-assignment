@@ -7,7 +7,8 @@
         {"Content":"Step 3a: Reconciling Refunds, Claims and Disputes","jumpToLink":"Jump to Step 3a","Files needed":"1099-K_2021.pdf","Download": "Generate"},
         {"Content":"Step 3b: Reconciling Expenses","jumpToLink":"Jump to Step 3b","Files needed":"1099-K_2021.pdf","Download": "Generate"}
     ],
-    "stepsContent": [{
+    "stepsContent": [
+        {
         "step_no":"1",
         "title": "Understanding your 1099-K Form",
         "summary":"By comparing the aggregate amounts from your 1099-K form to your eBay reports, you can reconcile your sales, returns, and expenses.",
