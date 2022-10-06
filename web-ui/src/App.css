@@ -1,18 +1,11 @@
-.App {
-  /* text-align: center; */
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+td a{
+  display: block;
+  color: #3665F3;
+  text-decoration: none;
+  text-align: left;
 }
-
 
 .header{
   top: 143px;
@@ -38,8 +31,6 @@
   margin-right: 27%;
 }
 table{
-  margin-top: 32px;
-  margin-bottom: 36px;
   width : 100%;
 }
 th{
@@ -48,6 +39,7 @@ th{
   font-size: 12px;
   line-height: 16px;
   height: 44px;
+  padding-left: 10px;
   text-align: left;
   color: #555555;
   background-color: #F7F7F7;
@@ -73,9 +65,7 @@ td{
   box-sizing: border-box;
 
   position: absolute;
-  width: 1011px;
-  height: 1954px;
-  left: 303px;
+  width: 80%;
   top: 252px;
   background: #FFFFFF;
   /* light/foreground/disabled */
@@ -85,23 +75,26 @@ td{
   }
   .report-nav-bar{
       position: absolute;
-      width: 365px;
+      width: 40%;
       /* height: 1810px; */
-      margin-left: 35px;
+      /* margin-left: 35px; */
       /* margin-top: 64px; */
 
       background: #F5F5F5;
-  }
- 
+  } 
   .text-small-01{
       font-family: 'Market Sans';
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
-      /* margin-left: 24px; */
-      margin-right: 45px;
       text-align: left;
+  }
+  .div-item-margin{
+    margin-right: 23%;
+  }
+  .text-small-color{
+    color: #707070;
   }
   .text-small-bold{
       font-family: 'Market Sans';
@@ -112,6 +105,10 @@ td{
       text-align: end;
       margin-top: 0;
       text-align: left;
+  }
+  .item-table{
+    padding-top:8px;
+    padding-left: 16px;
   }
   .text-large-1{
       font-family: 'Market Sans';
@@ -124,7 +121,7 @@ td{
   }
   .sub-item{
       margin-top: 0px;
-      width: 28%;
+      width: 41%;
   }
   .text-medium{
       font-family: 'Market Sans';
@@ -149,8 +146,6 @@ td{
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
-      margin-left: 16px;
-      margin-right: 45px;
       text-align: left;
       margin-top: 0px;
   }
@@ -160,8 +155,6 @@ td{
       font-weight: 400;
       font-size: 12px;
       line-height: 16px;
-      /* margin-left: 16px; */
-      /* margin-right: 45px; */
       text-align: left;
       color: #707070;
       margin-top: 0px;
@@ -182,23 +175,22 @@ td{
       margin-left: 18px;
 
   }
-  .div-list-1{
-      display: flex;
-  }
+
+  .list-item{
+    margin-left: 14%;
+    padding-right: 45px;
+}
   .circle {
       width: 45px;
       height: 22px;
-     
       border-radius: 51%;
-     
       background: #8F8F8F;
     }
     .circle-1 {
+      position: absolute;
       width: 22px;
       height: 22px;
-     
       border-radius: 51%;
-     
       background: #FBCD25;
     }
     .alpha-text{
@@ -228,7 +220,112 @@ td{
   }
   .step-info{
       height: 176px;
-      width: 246px;
+      width: 55%;
+      margin-top: 24px;
+      margin-bottom: 24px;
       background: #F7F7F7;
       border-radius: 8px;
   }
+
+
+
+  .rightDiv{
+    width: 55%;
+    float: right;
+    height: 50%;
+}
+
+p.paymentActivity {
+    font-family: 'Market Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: right;
+    color: #191919;
+    margin-top:0px;
+    padding-right: 10px;
+}
+
+.right {
+    float: right;
+    font-size: 12px;
+    text-align: right;
+    position:relative;
+    list-style-type: none;
+    padding-right: 10px;
+}
+
+.ahref { 
+    padding-right:0px;
+}
+.left {
+    float: left;
+    font-size: 10px;
+    text-align: left;
+    position: relative;
+    list-style-type: none;
+}
+
+.tdFirst {
+    text-align: left;
+}
+
+.tdLast {
+    text-align: right;
+}
+
+.trFirst {
+    background: #F7F7F7;
+}
+
+.line {
+    position: relative;
+    width: 95%;
+    border: 1px solid #000000;
+    margin: 0px;
+}
+p.accountSummary {
+  position: inherit;
+
+  font-family: 'Market Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+
+  color: #191919;
+  text-align:left;
+}
+
+.transactionSummary {
+    position: relative;
+
+    font-family: 'Market Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #191919;
+    margin: 10px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.thFirst {
+    text-align: center;
+    width: 36%;
+}
+
+.th{
+    text-align: center;
+    width: 18%;
+}
+
+.td {
+    text-align: center;
+}
+
+.expenseSubTd {
+    padding-left: 2%;
+    text-align: left;
+}

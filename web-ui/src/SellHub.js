@@ -1,16 +1,18 @@
+import React from 'react';
 import './App.css';
-import ShellHubData from '../src/ShellHubData.json';
+import SellHubData from './SellHubData.json';
+import clsx from 'clsx'; 
 
 
 
-function App() {
-  const data = ShellHubData;
-  const fileContent = ShellHubData.stepsContent;
+function SellHub() {
+  const data = SellHubData;
+  const fileContent = SellHubData?.stepsContent;
   const getHeadings = () => {
     return Object.keys(data.tableContent[0]);
   }
   const theadData = getHeadings();
-  const tbodyData = data.tableContent;
+  const tbodyData = data?.tableContent;
 
   return (
     <div className="App">
@@ -19,7 +21,7 @@ function App() {
           <div>
             <p className="title-header" >{data.hub_title}</p>
           </div>
-          <div className="text-small-01" style={{color:"#707070"}}>
+          <div className={clsx("text-small-01","text-small-color")}>
             {data.hub_info}
           </div>
         </div>
@@ -27,37 +29,41 @@ function App() {
           <table>
             <thead>
               <tr>
-                {theadData.map((heading, index) => {
-                  return <th key={heading + index}>{heading}</th>
-                })}
+              <th key={theadData[0]}>{theadData[0]}</th>
+              <th></th>
+              <th key={theadData[2] }>{theadData[2]}</th>
+              <th></th>
               </tr>
             </thead>
             <tbody>
-              {tbodyData.map((row, index) => {
+              {tbodyData?.map((row, index) => {
                 return <tr key={index}>
-                  {theadData.map((key, index) => {
-                    return <td key={row[key]}>{row[key]}</td>
-                  })}
-                </tr>;
+                  <td >{row.Content}</td>
+                  <td ><a href={"#step-" + index}>{row.jumpToLink}</a></td>
+                  <td >{row['Files needed']}</td>
+                  <td style={{color:"#3665F3"}}>{row.Download}</td>
+                </tr>
               })}
             </tbody>
           </table>
         </div>
         <div className="step-content" >
-          {fileContent.map((item, idx) => {
+          {fileContent?.map((item, idx) => {
             return <div className="file-content" id={"step-" + idx}>
               <div className="sub-item">
                 <div>
                   <p className="text-large-1">{"Step " + (item.step_no) + ": "} {item.title}</p>
                 </div>
                 {item.table && <>
-                  <div>
-                    <p className="text-small-bold">
-                      {item.table.title}
-                    </p>
-                    <p className="text-large-1" >
-                      {item.table.total}
-                    </p>
+                  <div className="step-info">
+                    <div className='item-table'>
+                        <p className={"text-small-bold"}>
+                          {item.table.title}
+                        </p>
+                        <p className={"text-large-1"} >
+                          {item.table.total}
+                        </p>
+                    </div>
                     {item.table.table_item.map((tableItem) => {
                       return <div className="div-item">
                         <p className="text-small-list-01">{tableItem.name}</p>
@@ -69,7 +75,7 @@ function App() {
                   </div>
                 </>
                 }
-                <div>
+                <div className='div-item-margin'>
                   <p className="text-small-01">
                     {item.summary}
                   </p>
@@ -83,19 +89,17 @@ function App() {
                   </div>
                 })}
 
-                <div>
-                  <p className="text-small-01" >
-                    For a more detailed description of your 1099-K, visit our <u>Help Hub</u>.
+                <div className='div-item-margin'>
+                  <p className="text-small-01">
+                  <div  dangerouslySetInnerHTML={{__html:item["help_link"]}}></div>
                   </p>
                 </div>
-                <div>
-                  <p className="text-small-01">
-                    You can always download current and previous 1099-K forms from the <u>Taxes</u> page.
-                  </p>
+                <div className='div-item-margin'> 
+                  <div className={clsx("text-small-01","text-small-color")} dangerouslySetInnerHTML={{__html:item["info"]}}></div>
                 </div>
               </div>
               <div className="image-css">
-                <img src={""} className="App-logo" alt="logo" />
+                <img src={""} alt="logo" />
               </div>
             </div>
           })}
@@ -107,4 +111,4 @@ function App() {
   );
 }
 
-export default App;
+export default SellHub;
