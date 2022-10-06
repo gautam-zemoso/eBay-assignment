@@ -71,11 +71,7 @@ function PaymentPage() {
             {subTbody.map((item, index) => {
               return <table>
                 <thead>
-                  {/* <tr>{mainTableContent[index].Content}</tr> */}
                   <tr>
-                    {item === 1 && <div className="circle-1">
-                      <p className="alpha-text-1">{String.fromCharCode(index + 65)}</p>
-                    </div>}
                     <th className="thFirst">{mainTableContent[index].Content}</th>
                     {subThead.map((heading, index) => {
                       return <th className="th" key={heading + index}>{heading}</th>
@@ -85,7 +81,7 @@ function PaymentPage() {
                 <tbody>
                   {item.subTableContent.map((row, index) => {
                     return <tr key={index} className={index % 2 === 0 ? "trFirst" : ""}>
-                      <td className={(row.depth && row.depth === 1) ? "expenseSubTd" : "td"}>{row.content}</td>
+                      <td className={(row.depth && row.depth === "1") ? "expenseSubTd" : "tdFirst"}>{row.content}</td>
                       <td className="td">{row.Debits}</td>
                       <td className="td">{row.Credits}</td>
                       <td className="td">{row.Net}</td>

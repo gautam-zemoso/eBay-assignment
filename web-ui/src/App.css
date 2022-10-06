@@ -272,7 +272,7 @@ p.paymentActivity {
   text-align: right;
   color: #191919;
   margin-top: 0px;
-  padding-right: 10px;
+  padding-right: 5%;
 }
 
 .right {
@@ -347,7 +347,6 @@ p.paymentActivity {
   color: #191919;
   margin: 10px 10px 10px 0px;
   text-align: left;
-  padding-right: 5%;
 }
 
 .thFirst {
