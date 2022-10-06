@@ -1,0 +1,15 @@
+{
+    "report_list":[
+        {"key":"Net proceeds", "value": "Net proceeds are total that the seller receives, net of any eBay collected tax and fees from the buyer, before netting any eBay collected fees from the seller"},
+        {"key": "Gross refunds", "value": "Gross refunds are the total that the seller refunds, before netting any eBay credited fees to the seller"},
+        {"key": "Gross claim", "value": "Gross claim are the total that the seller refunds, before netting any eBay credited fees to the seller"}, 
+        {"key": "Gross payment", "value": "Gross payment dispute are the total that the seller refunds, before netting any eBay credited fees to the seller"},
+        {"key": "Adjustments", "value": "Adjustments are charges or credits that are initiated by eBay. For example, if eBay Customer Service issues a credit to the seller as a manual adjustment"},
+        {"key": "Purchases", "value": "Purchases are a purchase the seller makes using their payment account funds"},     
+        {"key": "Payouts", "value": "Payouts are disbursements from the seller’s account to the chosen payout account"},  
+        {"key": "Secondary", "value": "Secondary payouts are loan repayment from seller's payment account to seller's loan account"},  
+        {"key": "Transfers", "value": "Transfers are charges or credits that are between the seller’s payment account and another account. For example, if the seller initiates a top up from their bank account to their eBay account"},  
+        {"key": "Debits", "value": "Debits are all transactions amount that have negative impact to seller's payment account funds"},
+        {"key": "Credits", "value": "Credits are all transactions amount that have positive impact to seller's payment account funds"}        
+    ]
+}
