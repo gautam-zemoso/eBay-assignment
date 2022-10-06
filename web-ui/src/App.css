@@ -1,18 +1,17 @@
-
-
-td a{
+td a {
   display: block;
   color: #3665F3;
   text-decoration: none;
   text-align: left;
 }
 
-.header{
+.header {
   top: 143px;
   left: 303px;
   position: absolute;
 }
-.title-header{
+
+.title-header {
   font-family: 'Market Sans';
   font-style: normal;
   font-weight: 700;
@@ -20,39 +19,57 @@ td a{
   line-height: 40px;
   color: #191919;
 }
-.content{
+
+.content {
   margin-left: 287px;
   margin-right: 396px;
 }
-.hub-content{
+
+.hub-content {
   margin-left: 20%;
 }
-.child-content{
+
+.child-content {
   margin-right: 27%;
 }
-table{
-  width : 100%;
+
+table {
+  width: 100%;
+  padding-right: 5%;
 }
-th{
-  font-family: Helvetica Neue;
+
+th {
+  line-height: 24px;
+
   font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #191919;
+  height: 44px;
+}
+
+td {
+  font-family: 'Market Sans';
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  height: 44px;
-  padding-left: 10px;
+  height: 10px;
   text-align: left;
-  color: #555555;
-  background-color: #F7F7F7;
+  color: #333333;
 }
-.step-content{
+
+.step-content {
   margin-right: 5%;
 }
-.file-content{
+
+.file-content {
   text-align: left;
   display: flex;
   padding-top: 32px;
 }
-.border-box{
+
+.border-box {
   box-sizing: border-box;
 
   position: absolute;
@@ -63,219 +80,250 @@ th{
 
   border: 1px solid #C7C7C7;
   border-radius: 8px;
-  }
-  .report-nav-bar{
-      position: absolute;
-      width: 40%;
-      /* height: 1810px; */
-      /* margin-left: 35px; */
-      /* margin-top: 64px; */
-
-      background: #F5F5F5;
-  } 
-  .text-small-01{
-      font-family: 'Market Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      text-align: left;
-  }
-  .div-item-margin{
-    margin-right: 23%;
-  }
-  .text-small-color{
-    color: #707070;
-  }
-  .text-small-bold{
-      font-family: 'Market Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: end;
-      margin-top: 0;
-      text-align: left;
-  }
-  .item-table{
-    padding-top:8px;
-    padding-left: 16px;
-  }
-  .text-large-1{
-      font-family: 'Market Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 28px;
-      margin-top: 0px;
-      color: #191919;
-  }
-  .sub-item{
-      margin-top: 0px;
-      width: 41%;
-  }
-  .text-medium{
-      font-family: 'Market Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;  
-  }
-  .text-small{
-      font-family: 'Market Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      margin-left: 24px;
-      margin-right: 45px;
-      text-align: left;
-  }
-  .text-small-list{
-      font-family: 'Market Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      text-align: left;
-      margin-top: 0px;
-  }
-  .text-small-list-01{
-      font-family: 'Market Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 16px;
-      text-align: left;
-      color: #707070;
-      margin-top: 0px;
-  }
-  .pdf{
-      margin-top: 8px;
-      margin-left: 35px;
-      text-align: initial;
-      color: #3665F3;
-  }
-  .div-item{
-      display: flex;
-      justify-content: space-between;
-      padding: 0px 16px;
-  }
-  .div-list{
-      display: flex;
-      margin-left: 18px;
-
-  }
-
-  .list-item{
-    margin-left: 14%;
-    padding-right: 45px;
 }
-  .circle {
-      width: 45px;
-      height: 22px;
-      border-radius: 51%;
-      background: #8F8F8F;
-    }
-    .circle-1 {
-      position: absolute;
-      width: 22px;
-      height: 22px;
-      border-radius: 51%;
-      background: #FBCD25;
-    }
-    .alpha-text{
-      font-family: 'Market Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 18px;
-      margin-top: 2px;
-      color: #FFFFFF;
-      text-align: center;
-    }
-    .alpha-text-1{
-      font-family: 'Market Sans';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 18px;
-      margin-top: 2px;
-      color: #592E13;
-      text-align: center;
-  }
-  .image-css{
-      height: 354px;
-      width: 621px;
-      background: #F7F7F7;
-  }
-  .step-info{
-      height: 176px;
-      width: 55%;
-      margin-top: 24px;
-      margin-bottom: 24px;
-      background: #F7F7F7;
-      border-radius: 8px;
-  }
+
+.report-nav-bar {
+  position: absolute;
+  width: 40%;
+  /* height: 1810px; */
+  /* margin-left: 35px; */
+  /* margin-top: 64px; */
+
+  background: #F5F5F5;
+}
+
+.text-small-01 {
+  font-family: 'Market Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.div-item-margin {
+  margin-right: 23%;
+}
+
+.text-small-color {
+  color: #707070;
+}
+
+.text-small-bold {
+  font-family: 'Market Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: end;
+  margin-top: 0;
+  text-align: left;
+}
+
+.item-table {
+  padding-top: 8px;
+  padding-left: 16px;
+}
+
+.text-large-1 {
+  font-family: 'Market Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 0px;
+  color: #191919;
+}
+
+.sub-item {
+  margin-top: 0px;
+  width: 41%;
+}
+
+.text-medium {
+  font-family: 'Market Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-small {
+  font-family: 'Market Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 24px;
+  margin-right: 45px;
+  text-align: left;
+}
+
+.text-small-list {
+  font-family: 'Market Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  margin-top: 0px;
+}
+
+.text-small-list-01 {
+  font-family: 'Market Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  color: #707070;
+  margin-top: 0px;
+}
+
+.pdf {
+  margin-top: 8px;
+  margin-left: 35px;
+  text-align: initial;
+  color: #3665F3;
+}
+
+.div-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+.div-list {
+  display: flex;
+  margin-left: 18px;
+
+}
+
+.list-item {
+  margin-left: 14%;
+  padding-right: 45px;
+}
+
+.circle {
+  width: 45px;
+  height: 22px;
+  border-radius: 51%;
+  background: #8F8F8F;
+}
+
+.circle-1 {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 51%;
+  background: #FBCD25;
+}
+
+.alpha-text {
+  font-family: 'Market Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 2px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.alpha-text-1 {
+  font-family: 'Market Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 2px;
+  color: #592E13;
+  text-align: center;
+}
+
+.image-css {
+  height: 354px;
+  width: 621px;
+  background: #F7F7F7;
+}
+
+.step-info {
+  height: 176px;
+  width: 55%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background: #F7F7F7;
+  border-radius: 8px;
+}
 
 
 
-  .rightDiv{
-    width: 55%;
-    float: right;
-    height: 50%;
+.rightDiv {
+  width: 55%;
+  float: right;
+  height: 50%;
 }
 
 p.paymentActivity {
-    font-family: 'Market Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    text-align: right;
-    color: #191919;
-    margin-top:0px;
-    padding-right: 10px;
+  font-family: 'Market Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: right;
+  color: #191919;
+  margin-top: 0px;
+  padding-right: 10px;
 }
 
 .right {
-    float: right;
-    font-size: 12px;
-    text-align: right;
-    position:relative;
-    list-style-type: none;
-    padding-right: 10px;
+  font-family: 'Market Sans';
+  font-style: normal;
+  float: right;
+  font-size: 12px;
+  text-align: right;
+  position: relative;
+  list-style-type: none;
+  padding-right: 5%;
+  line-height: 16px;
 }
 
-.ahref { 
-    padding-right:0px;
+.ahref {
+  padding-right: 0px;
 }
+
 .left {
-    float: left;
-    font-size: 10px;
-    text-align: left;
-    position: relative;
-    list-style-type: none;
+  font-family: 'Market Sans';
+  font-style: normal;
+  float: left;
+  font-size: 10px;
+  text-align: left;
+  position: relative;
+  list-style-type: none;
+  line-height: 16px;
+  padding: 0% 5% 0% 0%;
 }
 
 .tdFirst {
-    text-align: left;
+  text-align: left;
 }
 
 .tdLast {
-    text-align: right;
+  text-align: right;
 }
 
 .trFirst {
-    background: #F7F7F7;
+  background: #F7F7F7;
 }
 
 .line {
-    position: relative;
-    width: 95%;
-    border: 1px solid #000000;
-    margin: 0px;
+  position: relative;
+  width: 95%;
+  border: 1px solid #000000;
+  margin: 0px;
+  margin-right: 5%;
 }
-p.accountSummary {
+
+.accountSummary {
   position: inherit;
 
   font-family: 'Market Sans';
@@ -284,39 +332,39 @@ p.accountSummary {
   font-size: 16px;
 
   color: #191919;
-  text-align:left;
+  text-align: left;
 }
 
 .transactionSummary {
-    position: relative;
+  position: relative;
 
-    font-family: 'Market Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+  font-family: 'Market Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
 
-    color: #191919;
-    margin: 10px;
-    text-align: left;
-    padding-right: 10px;
+  color: #191919;
+  margin: 10px 10px 10px 0px;
+  text-align: left;
+  padding-right: 5%;
 }
 
 .thFirst {
-    text-align: center;
-    width: 36%;
+  text-align: left;
+  width: 36%;
 }
 
-.th{
-    text-align: center;
-    width: 18%;
+.th {
+  text-align: center;
+  width: 18%;
 }
 
 .td {
-    text-align: center;
+  text-align: center;
 }
 
 .expenseSubTd {
-    padding-left: 2%;
-    text-align: left;
+  padding-left: 2%;
+  text-align: left;
 }
