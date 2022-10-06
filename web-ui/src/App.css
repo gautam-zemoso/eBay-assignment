@@ -1,0 +1,234 @@
+.App {
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.header{
+  top: 143px;
+  left: 303px;
+  position: absolute;
+}
+.title-header{
+  font-family: 'Market Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: #191919;
+}
+.content{
+  margin-left: 287px;
+  margin-right: 396px;
+}
+.hub-content{
+  margin-left: 20%;
+}
+.child-content{
+  margin-right: 27%;
+}
+table{
+  margin-top: 32px;
+  margin-bottom: 36px;
+  width : 100%;
+}
+th{
+  font-family: Helvetica Neue;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  height: 44px;
+  text-align: left;
+  color: #555555;
+  background-color: #F7F7F7;
+}
+td{
+  font-family: 'Market Sans';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  height: 44px;
+  text-align: left;
+  color: #333333;
+}
+.step-content{
+  margin-right: 5%;
+}
+.file-content{
+  text-align: left;
+  display: flex;
+  padding-top: 32px;
+}
+.border-box{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 1011px;
+  height: 1954px;
+  left: 303px;
+  top: 252px;
+  background: #FFFFFF;
+  /* light/foreground/disabled */
+
+  border: 1px solid #C7C7C7;
+  border-radius: 8px;
+  }
+  .report-nav-bar{
+      position: absolute;
+      width: 365px;
+      /* height: 1810px; */
+      margin-left: 35px;
+      /* margin-top: 64px; */
+
+      background: #F5F5F5;
+  }
+ 
+  .text-small-01{
+      font-family: 'Market Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      /* margin-left: 24px; */
+      margin-right: 45px;
+      text-align: left;
+  }
+  .text-small-bold{
+      font-family: 'Market Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: end;
+      margin-top: 0;
+      text-align: left;
+  }
+  .text-large-1{
+      font-family: 'Market Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      margin-top: 0px;
+      color: #191919;
+  }
+  .sub-item{
+      margin-top: 0px;
+      width: 28%;
+  }
+  .text-medium{
+      font-family: 'Market Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;  
+  }
+  .text-small{
+      font-family: 'Market Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      margin-left: 24px;
+      margin-right: 45px;
+      text-align: left;
+  }
+  .text-small-list{
+      font-family: 'Market Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      margin-left: 16px;
+      margin-right: 45px;
+      text-align: left;
+      margin-top: 0px;
+  }
+  .text-small-list-01{
+      font-family: 'Market Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      /* margin-left: 16px; */
+      /* margin-right: 45px; */
+      text-align: left;
+      color: #707070;
+      margin-top: 0px;
+  }
+  .pdf{
+      margin-top: 8px;
+      margin-left: 35px;
+      text-align: initial;
+      color: #3665F3;
+  }
+  .div-item{
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 16px;
+  }
+  .div-list{
+      display: flex;
+      margin-left: 18px;
+
+  }
+  .div-list-1{
+      display: flex;
+  }
+  .circle {
+      width: 45px;
+      height: 22px;
+     
+      border-radius: 51%;
+     
+      background: #8F8F8F;
+    }
+    .circle-1 {
+      width: 22px;
+      height: 22px;
+     
+      border-radius: 51%;
+     
+      background: #FBCD25;
+    }
+    .alpha-text{
+      font-family: 'Market Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      margin-top: 2px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+    .alpha-text-1{
+      font-family: 'Market Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      margin-top: 2px;
+      color: #592E13;
+      text-align: center;
+  }
+  .image-css{
+      height: 354px;
+      width: 621px;
+      background: #F7F7F7;
+  }
+  .step-info{
+      height: 176px;
+      width: 246px;
+      background: #F7F7F7;
+      border-radius: 8px;
+  }
