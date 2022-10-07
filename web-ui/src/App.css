@@ -197,24 +197,28 @@ td {
 }
 
 .list-item {
-  margin-left: 11%;
+  margin-left: 32px;
   padding-right: 45px;
 }
 
-.circle {
-  width: 45px;
-  height: 22px;
-  border-radius: 51%;
-  background: #8F8F8F;
-}
-
-.circle-1 {
+.circle-2 {
   position: absolute;
   width: 22px;
   height: 22px;
   border-radius: 51%;
   background: #FBCD25;
 }
+.circle-1 {
+  width: 22px;
+  position: absolute;
+  height: 22px;
+  border-radius: 51%;
+  background: #8F8F8F;
+}
+.step-text{
+  margin-left: 32px;
+}
+
 
 .alpha-text {
   font-family: 'Market Sans';

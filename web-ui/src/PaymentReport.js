@@ -35,7 +35,7 @@ function PaymentPage() {
             {data?.report_list?.map((step, index) => {
               return <div className="div-list">
                 <div className="circle-1">
-                  <p className="alpha-text-1">{String.fromCharCode(index + 65)}</p>
+                  <p className="alpha-text">{String.fromCharCode(index + 65)}</p>
                 </div>
                 <div className='list-item'>
                   <p className="text-small-list"><strong>{step.key}</strong> {(step.value).split(step.key).pop()}</p>

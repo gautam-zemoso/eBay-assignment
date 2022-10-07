@@ -82,10 +82,12 @@ function SellHub() {
                 </div>
                 {item?.step_details?.map((step, index) => {
                   return <div className="div-list-1">
-                    <div className="circle-1">
+                    <div className="circle-2">
                       <p className="alpha-text-1">{String.fromCharCode(index + 65)}</p>
                     </div>
-                    <p className="text-small-list">{step}</p>
+                    <div className='step-text'>
+                        <p className="text-small-list">{step}</p>
+                    </div>
                   </div>
                 })}
 
