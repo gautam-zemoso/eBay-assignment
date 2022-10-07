@@ -1,4 +1,5 @@
 {
+    "report_info":"The <b>Payment Activity Report</b> provides account activity summary for revenues, expenses, transfers, and tax. Sellers can select custom time period,and download the report in PDF format if needed. Sellers can also download detailed transaction report in .CSV format for revenues, expense, transfers, and tax.",
     "report_list":[
         {"key":"Net proceeds", "value": "Net proceeds are total that the seller receives, net of any eBay collected tax and fees from the buyer, before netting any eBay collected fees from the seller"},
         {"key": "Gross refunds", "value": "Gross refunds are the total that the seller refunds, before netting any eBay credited fees to the seller"},
