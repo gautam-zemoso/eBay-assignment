@@ -1,7 +1,7 @@
 import './App.css';
 import PaymentReport from '../src/paymentReport.json';
 import PaymentData from '../src/PaymentJsonData.json';
-import clsx from 'clsx'; 
+import clsx from 'clsx';
 
 
 function PaymentPage() {
@@ -31,7 +31,7 @@ function PaymentPage() {
             <p class="text-medium">Download PDF</p>
           </div>
           <div class="report-nav-bar">
-             <div className={clsx("text-small","report-info")} dangerouslySetInnerHTML={{__html:data["report_info"]}}></div>
+            <div className={clsx("text-small","report-info")} dangerouslySetInnerHTML={{ __html: data["report_info"] }}></div>
             {data?.report_list?.map((step, index) => {
               return <div className="div-list">
                 <div className="circle-1">
@@ -51,7 +51,7 @@ function PaymentPage() {
             </div>
             <table>
               <thead>
-                <tr className="accountSummary"><th>{mainTableHeader}</th></tr>
+                <tr className="accountSummary"><th className="accountSummarySub">{mainTableHeader}</th></tr>
               </thead>
               <tbody>
                 {mainTableContent.map((row, index) => {
@@ -69,9 +69,27 @@ function PaymentPage() {
               return <table>
                 <thead>
                   <tr>
-                    <th className="thFirst">{mainTableContent[index].Content}</th>
-                    {subThead.map((heading, index) => {
-                      return <th className="th" key={heading + index}>{heading}</th>
+                    <th className={index===0 ? "thFirst" : "thFirstSub"}>
+                      <span className='circle-top-span'>
+                        {index === 0 &&
+                          <span class="circle-2">
+                            <p class="alpha-text">A</p>
+                          </span>
+                        }
+                        <span className={index===0 ?"content-span":""}>{mainTableContent[index].Content}</span>
+                      </span>
+                    </th>
+                    {subThead.map((heading, index1) => {
+                      return <th className={index1===2 ?"thLast":"th"} key={heading + index1}>
+                        {(index === 0 && index1!==2) ?
+                        <span className='circle-top-span'>
+                          
+                            <span class="circle-2">
+                              <p class="alpha-text">A</p>
+                            </span>
+                          <span className="content-span">{heading}</span></span> :
+                          <p>{heading}</p>}
+                      </th>
                     })}
                   </tr>
                 </thead>
@@ -81,7 +99,7 @@ function PaymentPage() {
                       <td className={(row.depth && row.depth === "1") ? "expenseSubTd" : "tdFirst"}>{row.content}</td>
                       <td className="td">{row.Debits}</td>
                       <td className="td">{row.Credits}</td>
-                      <td className="td">{row.Net}</td>
+                      <td className="tdLast">{row.Net}</td>
 
                     </tr>;
                   })}
