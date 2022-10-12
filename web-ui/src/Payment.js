@@ -33,7 +33,7 @@ function Payment() {
                             <td className="tdFirst">{row.Content}</td>
                             <td className="tdLast">{row.Amount}</td>
                         </tr>)
-                            ;
+                        ;
                     })}
                 </tbody>
             </table>
@@ -44,13 +44,13 @@ function Payment() {
                     <thead>
                         <tr>
                             <th className={index === 0 ? "thFirst" : "thFirstSub"}>
-                                <span className='circle-top-span'>
+                                <span className='circle-top-span-h1'>
                                     {index === 0 &&
-                                        <span class="circle-2">
+                                        <span class="circle-2-h1">
                                             <p class="alpha-text">A</p>
                                         </span>
                                     }
-                                    <span className={index === 0 ? "content-span" : ""}>{mainTableContent[index].Content}</span>
+                                    <span className={index === 0 ? "content-span-h1" : ""}>{mainTableContent[index].Content}</span>
                                 </span>
                             </th>
                             {subThead.map((heading, index1) => {
@@ -71,9 +71,9 @@ function Payment() {
                         {item.subTableContent.map((row, index) => {
                             return <tr key={index} className={index % 2 === 0 ? "trFirst" : ""}>
                                 <td className={(row.depth && row.depth === "1") ? "expenseSubTd" : "tdFirst"}>{row.content}</td>
-                                <td className="td">{row.Debits}</td>
-                                <td className="td">{row.Credits}</td>
-                                <td className="tdLast">{row.Net}</td>
+                                <td className={(row.Debits) === '--' ? "tdHyphenDebit" : "td"}>{row.Debits}</td>
+                                <td className={(row.Credits) === '--' ? "tdHyphenCredit" : "td"}>{row.Credits}</td>
+                                <td className={(row.Net) === '--' ? "tdHyphenNet" : "tdLast"}>{row.Net}</td>
 
                             </tr>;
                         })}

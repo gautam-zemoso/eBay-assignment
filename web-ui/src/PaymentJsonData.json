@@ -48,8 +48,8 @@
             "subTableContent":
         [
            {"content":"Payout","Debits":"-$10,000.00","Credits":"$3,000.00","Net":"-$7,000.00"},
-           {"content":"Transfer","Debits":"--","Credits":"$3,000.00","Net":"-$3,000.00"}, 
-           {"content":"Subtotal","Debits":"","Credits":"","Net":""}
+           {"content":"Transfer","Debits":"--","Credits":"$3,000.00","Net":"$3,000.00"}, 
+           {"content":"Subtotal","Debits":"-$10,000.00","Credits":"$6,000.00","Net":"-$4,000.00"}
         ]
         },
         {

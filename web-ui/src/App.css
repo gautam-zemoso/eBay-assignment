@@ -34,8 +34,9 @@ td a {
 }
 
 table {
-  width: 100%;
+  width: 95%;
   padding-right: 5%;
+  border-collapse: collapse;
 }
 
 th {
@@ -51,7 +52,7 @@ td {
   font-family: 'Market Sans';
   font-weight: 400;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 20px;
   height: 10px;
   text-align: left;
   color: #333333;
@@ -81,7 +82,7 @@ td {
   position: absolute;
   width: 36%;
   margin-left: 35px;
-  margin-top: 50px;
+  margin-top: 3%;
 
   background: #F5F5F5;
 }
@@ -113,10 +114,12 @@ td {
   margin-top: 0;
   text-align: left;
 }
-.report-info{
+
+.report-info {
   margin-top: 22px;
   margin-bottom: 31px;
 }
+
 .item-table {
   padding-top: 8px;
   padding-left: 16px;
@@ -207,7 +210,19 @@ td {
   height: 20px;
   border-radius: 51%;
   background: #FBCD25;
+  margin-left: -25px;
+  margin-top: -1px;
 }
+
+.circle-2-h1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 51%;
+  background: #FBCD25;
+  margin-top: -1px;
+}
+
 .circle-1 {
   width: 22px;
   position: absolute;
@@ -215,7 +230,8 @@ td {
   border-radius: 51%;
   background: #8F8F8F;
 }
-.step-text{
+
+.step-text {
   margin-left: 32px;
 }
 
@@ -261,10 +277,14 @@ td {
   width: 55%;
   float: right;
   height: 50%;
+  padding-bottom: 5%;
+  padding-top: 3%;
 }
 
 .rightDiv1 {
   padding-left: 5%;
+  padding-bottom: 5%;
+  padding-top: 3%;
 }
 
 p.paymentActivity {
@@ -276,6 +296,7 @@ p.paymentActivity {
   color: #191919;
   margin-top: 0px;
   padding-right: 5%;
+  line-height: 32px;
 }
 
 .right {
@@ -288,6 +309,10 @@ p.paymentActivity {
   list-style-type: none;
   padding-right: 5%;
   line-height: 16px;
+}
+
+.liReportNumber {
+  color: #707070;
 }
 
 .ahref {
@@ -305,22 +330,39 @@ p.paymentActivity {
   line-height: 16px;
   padding: 0% 5% 0% 0%;
 }
+
 .circle-top-span {
-display: flex;
+  display: table;
+  margin: auto;
+  float: right;
 }
 
 .content-span {
+  margin: auto;
+}
+
+.circle-top-span-h1 {
+  display: table;
+}
+
+.content-span-h1 {
   margin-left: 27px;
+}
+
+li {
+  color: #191919;
 }
 
 .tdFirst {
   text-align: left;
   padding-left: 27px;
+  color: #191919;
 }
 
 .tdLast {
   text-align: right;
   padding-right: 27px;
+  color: #191919;
 }
 
 .trFirst {
@@ -331,7 +373,7 @@ display: flex;
   position: relative;
   width: 95%;
   border: 1px solid #000000;
-  margin: 2% 5% 0% 0%; 
+  margin: 2% 5% 0% 0%;
 }
 
 .accountSummary {
@@ -349,6 +391,8 @@ display: flex;
 
 .accountSummarySub {
   padding-left: 27px;
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .transactionSummary {
@@ -361,7 +405,7 @@ display: flex;
   line-height: 24px;
 
   color: #191919;
-  margin: 10px 10px 10px 0px;
+  margin: 12px 10px -5px 0px;
   text-align: left;
   padding-left: 27px;
 }
@@ -371,27 +415,47 @@ display: flex;
   width: 36%;
 }
 
-.thFirstSub{
-  padding-left:27px;
+.thFirstSub {
+  padding-left: 27px;
   text-align: left;
   width: 36%;
 }
 
 .th {
-  text-align: center;
-  width: 18%;
+  text-align: right;
+  width: 15%;
 }
 
 .thLast {
   text-align: right;
   padding-right: 27px;
+  width: 15%;
 }
 
 .td {
-  text-align: center;
+  text-align: right;
+  color: #191919;
+}
+
+.tdHyphenDebit {
+  text-align: right;
+  padding-right: 16px;
+  color: #191919;
+}
+
+.tdHyphenCredit {
+  text-align: right;
+  padding-right: 18px;
+  color: #191919;
+}
+
+.tdHyphenNet {
+  text-align: right;
+  padding-right: 39px;
+  color: #191919;
 }
 
 .expenseSubTd {
-  padding-left: 8%;
+  padding-left: 32px;
   text-align: left;
 }
