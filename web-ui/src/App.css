@@ -52,7 +52,6 @@ td {
   font-family: 'Market Sans';
   font-weight: 400;
   font-size: 12px;
-  line-height: 20px;
   height: 10px;
   text-align: left;
   color: #333333;
@@ -367,6 +366,11 @@ li {
 
 .trFirst {
   background: #F7F7F7;
+  line-height: 30px;
+}
+
+.tr {
+  line-height: 30px; 
 }
 
 .line {
