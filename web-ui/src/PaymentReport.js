@@ -55,7 +55,7 @@ function PaymentPage() {
               </thead>
               <tbody>
                 {mainTableContent.map((row, index) => {
-                  return (<tr className={index % 2 === 0 ? "trFirst" : ""} key={index}>
+                  return (<tr className={index % 2 === 0 ? "trFirst" : "tr"} key={index}>
                     <td className="tdFirst">{row.Content}</td>
                     <td className="tdLast">{row.Amount}</td>
                   </tr>)
@@ -95,7 +95,7 @@ function PaymentPage() {
                 </thead>
                 <tbody>
                   {item.subTableContent.map((row, index) => {
-                    return <tr key={index} className={index % 2 === 0 ? "trFirst" : ""}>
+                    return <tr key={index} className={index % 2 === 0 ? "trFirst" : "tr"}>
                       <td className={(row.depth && row.depth === "1") ? "expenseSubTd" : "tdFirst"}>{row.content}</td>
                       <td className={(row.Debits) === '--' ? "tdHyphenDebit" : "td"}>{row.Debits}</td>
                       <td className={(row.Credits) === '--' ? "tdHyphenCredit" : "td"}>{row.Credits}</td>

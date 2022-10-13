@@ -37,6 +37,7 @@ table {
   width: 95%;
   padding-right: 5%;
   border-collapse: collapse;
+  margin-bottom: 5px;
 }
 
 th {
@@ -52,7 +53,6 @@ td {
   font-family: 'Market Sans';
   font-weight: 400;
   font-size: 12px;
-  line-height: 20px;
   height: 10px;
   text-align: left;
   color: #333333;
@@ -400,6 +400,11 @@ li {
 
 .trFirst {
   background: #F7F7F7;
+  line-height: 28px;
+}
+
+.tr {
+  line-height: 40px; 
 }
 
 .line {
