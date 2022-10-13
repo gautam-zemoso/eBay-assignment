@@ -8,9 +8,9 @@ export default () => (
 
       <BrowserRouter>
         <Switch>
-          <Route path="/" component={SellHub} exact />
-          <Route path="/payment" component={PaymentPage} />
-          <Route path="/paymentTables" component={Payment} />
+          <Route path="/page3" component={SellHub} exact />
+          <Route path="/page2" component={PaymentPage} />
+          <Route path="/page1" component={Payment} />
         </Switch>
       </BrowserRouter>
   

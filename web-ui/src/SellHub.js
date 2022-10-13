@@ -15,7 +15,7 @@ function SellHub() {
   const tbodyData = data?.tableContent;
 
   return (
-    <div className="App">
+    <div className="App" id="sell-hub'">
       <div className="hub-content">
         <div className="child-content">
           <div>
@@ -27,20 +27,20 @@ function SellHub() {
         </div>
         <div className="child-content">
           <table>
-            <thead>
+            <thead className='tr-sell'>
               <tr>
-              <th key={theadData[0]}>{theadData[0]}</th>
+              <th key={theadData[0]} className="th-sell" >{theadData[0]}</th>
               <th></th>
-              <th key={theadData[2] }>{theadData[2]}</th>
+              <th key={theadData[2] } className="th-sell">{theadData[2]}</th>
               <th></th>
               </tr>
             </thead>
             <tbody>
               {tbodyData?.map((row, index) => {
-                return <tr key={index}>
-                  <td >{row.Content}</td>
+                return <tr key={index} className='tbody-sell'>
+                  <td className={clsx("td-sell","th-content")} >{row.Content}</td>
                   <td ><a href={"#step-" + index}>{row.jumpToLink}</a></td>
-                  <td >{row['Files needed']}</td>
+                  <td className='td-sell'>{row['Files needed']}</td>
                   <td style={{color:"#3665F3"}}>{row.Download}</td>
                 </tr>
               })}
@@ -82,7 +82,7 @@ function SellHub() {
                 </div>
                 {item?.step_details?.map((step, index) => {
                   return <div className="div-list-1">
-                    <div className="circle-2">
+                    <div className="circle">
                       <p className="alpha-text-1">{String.fromCharCode(index + 65)}</p>
                     </div>
                     <div className='step-text'>

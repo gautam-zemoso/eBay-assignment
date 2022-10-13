@@ -83,7 +83,7 @@ td {
   width: 36%;
   margin-left: 35px;
   margin-top: 3%;
-
+  height: 90%;
   background: #F5F5F5;
 }
 
@@ -98,12 +98,18 @@ td {
 
 .div-item-margin {
   margin-right: 23%;
+  margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 .text-small-color {
   color: #707070;
 }
 
+.th-content{
+    width: 37%;
+    padding-right: 29px;
+}
 .text-small-bold {
   font-family: 'Market Sans';
   font-style: normal;
@@ -235,6 +241,13 @@ td {
   margin-left: 32px;
 }
 
+.circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 51%;
+  background: #FBCD25;
+}
 
 .alpha-text {
   font-family: 'Market Sans';
@@ -353,6 +366,26 @@ li {
   color: #191919;
 }
 
+.th-sell {
+  text-align: left;
+  padding-left: 10px;
+  color:#555555;
+
+}
+.td-sell{
+  text-align: left;
+  padding-left: 10px;
+}
+.tr-sell {
+  background: #F7F7F7;
+  height: 44px;
+}
+.tbody-sell{
+    border-bottom-color: #E5E5E5;
+    border-bottom-width: 1px;
+    height: 36px;
+    border-bottom-style: solid;
+}
 .tdFirst {
   text-align: left;
   padding-left: 27px;
