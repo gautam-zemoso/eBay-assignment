@@ -37,6 +37,7 @@ table {
   width: 95%;
   padding-right: 5%;
   border-collapse: collapse;
+  margin-bottom: 5px;
 }
 
 th {
@@ -366,11 +367,11 @@ li {
 
 .trFirst {
   background: #F7F7F7;
-  line-height: 30px;
+  line-height: 28px;
 }
 
 .tr {
-  line-height: 30px; 
+  line-height: 40px; 
 }
 
 .line {
