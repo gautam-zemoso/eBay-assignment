@@ -33,7 +33,7 @@ function Payment() {
                 </thead>
                 <tbody>
                     {accountSummaryTable.map((row, index) => {
-                        return (<tr className={index % 2 === 0 ? "trFirst" : ""} key={index}>
+                        return (<tr className={index % 2 === 0 ? "trFirst" : "tr"} key={index}>
                             <td className="tdFirst">{TEXT_CONSTANT[row.title]}</td>
                             <td className="tdLast">{row.amount}</td>
                         </tr>)
@@ -73,7 +73,7 @@ function Payment() {
                     </thead>
                     <tbody>
                         {item.subTableContent.map((row, index) => {
-                            return <tr key={index} className={index % 2 === 0 ? "trFirst" : ""}>
+                            return <tr key={index} className={index % 2 === 0 ? "trFirst" : "tr"}>
                                 <td className={(row.depth && row.depth === 1) ? "expenseSubTd" : "tdFirst"}>{TEXT_CONSTANT[row.title]}</td>
                                 <td className={(row.Debits) === '--' ? "tdHyphenDebit" : "td"}>{row.debitAmount}</td>
                                 <td className={(row.Credits) === '--' ? "tdHyphenCredit" : "td"}>{row.creditAmount}</td>
