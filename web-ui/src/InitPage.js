@@ -10,7 +10,7 @@ export default () => (
         <Switch>
           <Route path="/page3" component={SellHub} exact />
           <Route path="/page2" component={PaymentPage} />
-          <Route path="/page1" component={Payment} />
+          <Route path="/" component={Payment} />
         </Switch>
       </BrowserRouter>
   
