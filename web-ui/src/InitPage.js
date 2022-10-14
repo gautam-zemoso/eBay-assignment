@@ -4,7 +4,7 @@ import SellHub from './SellHub';
 import PaymentPage from './PaymentReport';
 import Payment from './Payment';
 
-export default () => (
+const InitPage  = () => (
 
       <BrowserRouter>
         <Switch>
@@ -15,3 +15,5 @@ export default () => (
       </BrowserRouter>
   
 );
+
+export default InitPage;

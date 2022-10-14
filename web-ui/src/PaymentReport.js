@@ -13,7 +13,7 @@ function PaymentPage() {
   const subThead = paymentData.subTableHeader;
   const subTbody = paymentData.subTables;
   const rightListItems = paymentData.head_right.map((item) => item.type === "link" ?
-    <li> <a className="ahref" href={""}>{item.content}</a></li> : <li>{item.content}</li>
+    <li> <a className="ahref" href={"."}>{item.content}</a></li> : <li>{item.content}</li>
   );
 
   const leftListItems = paymentData.head_left.map((item) =>

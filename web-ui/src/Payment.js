@@ -19,7 +19,7 @@ function Payment() {
                 <ul className="right">
                      <li>{`${TEXT_CONSTANT.DATE_RANGE}: ${constants.dateRange}`}</li>
                      <li>{`${TEXT_CONSTANT.GENERATED}: ${constants.dateGenerated}`}</li>
-                     <li> <a className="ahref" href={""}>{TEXT_CONSTANT.VIEW_REPORT_EXAMPLE}</a></li> 
+                     <li> <a className="ahref" href={"."}>{TEXT_CONSTANT.VIEW_REPORT_EXAMPLE}</a></li> 
                 
                 </ul>
                 <ul className="left">
