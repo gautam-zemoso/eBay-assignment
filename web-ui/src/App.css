@@ -8,7 +8,6 @@ td a {
 .header {
   top: 143px;
   left: 303px;
-  position: absolute;
 }
 
 .title-header {
@@ -26,7 +25,9 @@ td a {
 }
 
 .hub-content {
-  margin-left: 20%;
+  margin-left: 21%;
+  margin-right: 8%;
+
 }
 
 .child-content {
@@ -70,8 +71,6 @@ td {
 
 .border-box {
   box-sizing: border-box;
-  position: absolute;
-  width: 80%;
   top: 252px;
   background: #FFFFFF;
   border: 1px solid #C7C7C7;
@@ -79,14 +78,15 @@ td {
 }
 
 .report-nav-bar {
-  position: absolute;
   width: 36%;
   margin-left: 35px;
   margin-top: 3%;
-  height: 90%;
+  margin-bottom: 4%;
   background: #F5F5F5;
 }
-
+.payment{
+  width: 100%;
+}
 .text-small-01 {
   font-family: 'Market Sans';
   font-style: normal;
@@ -189,6 +189,7 @@ td {
 .pdf {
   margin-top: 8px;
   margin-left: 35px;
+  margin-bottom: -2%;
   text-align: initial;
   color: #3665F3;
 }

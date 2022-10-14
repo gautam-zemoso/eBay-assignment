@@ -8,8 +8,8 @@ const InitPage  = () => (
 
       <BrowserRouter>
         <Switch>
-          <Route path="/page3" component={SellHub} exact />
-          <Route path="/page2" component={PaymentPage} />
+          <Route path="/page2" component={SellHub} exact />
+          <Route path="/page1" component={PaymentPage} />
           <Route path="/" component={Payment} />
         </Switch>
       </BrowserRouter>

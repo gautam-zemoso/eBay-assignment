@@ -42,7 +42,9 @@ export const TEXT_CONSTANT = {
     PAYMENT_ACTIVITY_REPORT:"Payment activity report",
     DATE_RANGE:"Date range",
     GENERATED:"Generated",
-    VIEW_REPORT_EXAMPLE:"View example report"
+    VIEW_REPORT_EXAMPLE:"View example report",
+    PAYMENT_EXAMPLE_REPORT:"Payment activity example report",
+    DOWNLOAD_PDF:"Download PDF",
 }
 
 export const AMOUNT_TYPE = ["DEBITS","CREDITES","NET"]
